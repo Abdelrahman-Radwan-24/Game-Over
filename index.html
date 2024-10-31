@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="description" content="Game Over Site" />
+    <meta name="keywords" content="Game Over , موقع ألعاب" />
+    <meta name="author" content="ABDELRAHMAN RADWAN" />
+    <title>Game Over</title>
+    <link
+      rel="shortcut icon"
+      href="./assets/images/computer-game icon.png"
+      type="image/x-icon"
+    />
+    <!--?============> FontAwesome CSS File <============-->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!--?============> BootStrap File <============-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--?============> Main CSS File <============-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main
+      class="container login min-vh-100 d-flex justify-content-center align-items-center"
+    >
+      <section class="loginArea w-100 shadow-lg overflow-hidden rounded">
+        <div class="row g-0">
+          <div class="col-lg-5">
+            <div class="image d-none d-md-block"></div>
+          </div>
+          <div class="col-lg-7">
+            <div class="p-4">
+              <header class="text-center">
+                <img src="./assets/images/logo-sm.png" alt="logo game over" />
+                <h1>LogIn to Game Over</h1>
+              </header>
+              <form class="my-5" id="login">
+                <div class="row g-3">
+                  <div class="col-12">
+                    <div class="form-data">
+                      <input
+                        class="form-control"
+                        type="email"
+                        placeholder="Email Address"
+                        id="email"
+                      />
+                      <ul class="alert alert-danger p-0 invalid-feedback">
+                        <li>Email Is Required</li>
+                        <li>InValid Email Formate</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="co-12">
+                    <div class="form-data position-relative">
+                      <input
+                        class="form-control position-relative"
+                        type="password"
+                        placeholder="Password"
+                        id="password"
+                      />
+                      <i
+                        id="eye-icon"
+                        class="fa-regular fa-eye-slash eye-icon"
+                      ></i>
+                      <ul class="alert alert-danger p-0 invalid-feedback">
+                        <li>Password Is Required</li>
+                        <li>
+                          Minimum eight characters, at least one letter and one
+                          number
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div class="form-data">
+                      <button
+                        type="submit"
+                        class="btn main-btn w-100"
+                        id="btnLogin"
+                      >
+                        LogIn
+                      </button>
+                      <p id="msg" class="text-center"></p>
+                    </div>
+                  </div>
+                </div>
+              </form>
+              <footer>
+                <p class="text-center small">
+                  Not a member yet?
+                  <a
+                    class="text-decoration-none link-secondary"
+                    href="./register.html"
+                    role="button"
+                    >Create Account
+                  </a>
+                  <i class="fa-solid fa-angle-right fa-ico"></i>
+                </p>
+              </footer>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Start Fixed -->
+    <!-- fa-dun    fa-moon -->
+    <span class="position-fixed end-0 bottom-0 m-4 z-3">
+      <i role="button" id="mode" class="fa-regular fa-sun fa-xl p-3"></i>
+    </span>
+    <!-- End Fixed -->
+
+    <!--!===========> BootStrap Bundle File  <==========-->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <!--!===========> Main Js File <==========-->
+    <script src="./js/index.js"></script>
+  </body>
+</html>
